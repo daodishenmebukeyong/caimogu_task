@@ -153,7 +153,6 @@ public class CaiMoGuHelp {
         try (Response response = client.newCall(request).execute()) {
             if (response.isSuccessful()) {
                 String html = response.body().string();
-                log.error(html);
                 Document doc = Jsoup.parse(html);
                 Elements select = doc.select("div.point-container > .number");
                 if (select.size() != 1) {
