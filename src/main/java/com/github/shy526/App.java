@@ -7,6 +7,7 @@ import com.github.shy526.config.Config;
 import com.github.shy526.github.GithubHelp;
 import com.github.shy526.vo.GithubInfo;
 import com.github.shy526.vo.UserInfo;
+import lombok.extern.java.Log;
 import lombok.extern.slf4j.Slf4j;
 
 import java.time.LocalDate;
