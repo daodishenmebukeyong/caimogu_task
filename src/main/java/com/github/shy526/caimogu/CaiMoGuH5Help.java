@@ -306,7 +306,7 @@ public class CaiMoGuH5Help {
         }
         int randomIndex = (int) (Math.random() * commentStrList.size());
 
-        String content = Jsoup.parse(commentStrList.get(randomIndex)).text();
+        String content = Jsoup.parse(commentStrList.get(randomIndex)).text().trim();
         String emoji = randomEmoji(6);
         content+=emoji;
         return content ;
